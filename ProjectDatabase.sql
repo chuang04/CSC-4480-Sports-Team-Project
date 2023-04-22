@@ -1,15 +1,25 @@
 --Author: Calum Huang
-CREATE TABLE Player (
+--Clear any tables already made that are the same name/etc.
+Drop table player cascade constraints;
+drop table team cascade constraints;
+drop table coach cascade constraints;
+drop table statsp cascade constraints;
+drop table statst cascade constraints;
+
+
+
+CREATE TABLE PLAYER(
     pnumber number(3) not null,
     team varchar2(15) not null,
+    coach varchar2(30) not null,
     fname varchar2(15),
     lname varchar2(15),
     dob date,
     height number(4),
     statsID number(10),
-    constraint p_key primary key(pnumber, team),
-    foreign key (team) references team(tname),
-    foreign key (statsID) references StatsP(SID)
+    constraint p_key primary key(pnumber, team)
+    --foreign key (team) references team(tname),
+    --foreign key (statsID) references StatsP(SID)
 );
 
 CREATE TABLE StatsP (
@@ -27,16 +37,16 @@ CREATE TABLE StatsP (
 );
 
 CREATE TABLE Team (
-    tname varchar2(15),
+    tname varchar2(15) not null,
+    StateOrigin varchar2(15) not null,
+    coach varchar2(30) not null,
     mascott varchar2(15),
-    coach varchar2(30),
-    StateOrgin varchar2(15),
     yearcreated number(4),
     numPlayers  number(3),
     statsID number(10),
-    constraint t_key primary key(tname,mascott),
-    foreign key (coach) references coach(name),
-    foreign key (statsID) references statsT(SID)
+    primary key(tname)
+    --foreign key (coach) references coach(name),
+    --foreign key (statsID) references statsT(SID)
 );
 
 CREATE TABLE StatsT (
@@ -54,8 +64,32 @@ CREATE TABLE Coach (
     fullname varchar2(30) not null,
     teamname varchar2(15),
     pcoachingjob varchar2(15),
+    StateIn varchar2(15) not null,
     dob date,
     
-    primary key (fullname),
-    foreign key (teamname) references team(tname)
+    primary key (fullname)
+    --foreign key (teamname) references team(tname)
 );
+
+
+
+
+
+
+ALTER TABLE Player
+ADD foreign key (team) references team(tname);
+
+ALTER TABLE Player
+ADD foreign key (coach) references coach(fullname);
+
+ALTER TABLE Player
+ADD foreign key (statsID) references StatsP(SID);
+
+ALTER TABLE Team
+ADD foreign key (coach) references coach(fullname);
+
+ALTER TABLE Team
+ADD foreign key (statsID) references statsT(SID);
+
+ALTER TABLE Coach
+ADD foreign key (teamname) references team(tname);
