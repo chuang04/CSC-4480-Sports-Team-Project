@@ -1,0 +1,40 @@
+//Player:
+//（pnumber,team,fname,lname,dob,height,statsID)
+
+//KNICKS Players
+INSERT INTO player VALUES
+  (11, 'Knicks', 'TomThibodeau', 'Jalen', 'Brunson', 31-AUG-1996, 73, 46);
+INSERT INTO player VALUES
+  (9, 'Knicks', 'TomThibodeau', 'RJ', 'Barrett', 14-JUN-2000, 78, 47);
+INSERT INTO player VALUES
+  (3, 'Knicks', 'TomThibodeau', 'Josh', 'Hart', 6-MAR-1995, 77, 48);
+INSERT INTO player VALUES
+  (30, 'Knicks', 'TomThibodeau', 'Julius', 'Randle', 29-NOV-1994, 80, 49);
+INSERT INTO player VALUES
+  (23, 'Knicks', 'TomThibodeau', 'Mitchell', 'Robinson', 1-APR-1998, 84, 50);
+
+
+//HEAT Players
+INSERT INTO player VALUES
+  (7, 'Heat', 'ErikSpoelstra', 'Kyle', 'Lowry', 25-MAR-1986, 72, 51);
+INSERT INTO player VALUES
+  (4, 'Heat', 'ErikSpoelstra', 'Victor', 'Oladipo', 4-MAY-1992, 76, 52);
+INSERT INTO player VALUES
+  (22, 'Heat', 'ErikSpoelstra', 'Jimmy', 'Butler', 14-SEP-1989, 79, 53);
+INSERT INTO player VALUES
+  (42, 'Heat', 'ErikSpoelstra', 'Kevin', 'Love', 7-SEP-1988, 80, 54);
+INSERT INTO player VALUES
+  (13, 'Heat', 'ErikSpoelstra', 'Bam', 'Adebayo', 18-JUL-1997, 84, 55);
+  
+  
+//HAWKS Players
+INSERT INTO player VALUES
+  (11, 'Hawks', 'QuinSnyder', 'Trae', 'Young', 19-SEP-1998, 73, 56);
+INSERT INTO player VALUES
+  (5, 'Hawks', 'QuinSnyder', 'Dejounte', 'Murray', 19-SEP-1996, 76, 57);
+INSERT INTO player VALUES
+  (41, 'Hawks', 'QuinSnyder', 'Saddiq', 'Bey', 9-APR-1999, 79, 58);
+INSERT INTO player VALUES
+  (20, 'Hawks', 'QuinSnyder', 'John', 'Collins', 23-SEP-1997, 81, 59);
+INSERT INTO player VALUES
+  (15, 'Hawks', 'QuinSnyder', 'Clint', 'Capela', 18-MAY-1994, 82, 60);
