@@ -88,17 +88,17 @@ INSERT INTO Team VALUES
 --StatsT:
 --(SID, wins, losses, winpercent, conference, rank)
 INSERT INTO StatsT VALUES
-	(1, 58, 24, '70.7%', 'East', 1);
+	(1, 58, 24, '70.7%', 'Eastern', 1);
 INSERT INTO StatsT VALUES
-	(2, 57, 25, '69.5%', 'East', 2);
+	(2, 57, 25, '69.5%', 'Eastern', 2);
 INSERT INTO StatsT VALUES
-	(3, 54, 28, '65.9%', 'East', 3);
+	(3, 54, 28, '65.9%', 'Eastern', 3);
 
 --Coach:
 --(fullname, teamname, pcoachingjob, StateIn, dob)
 INSERT INTO Coach VALUES
-	('MikeBudenholzer', 'Bucks', 'HawksHC', 'Wisconsin', 6-AUG-1969);
+	('MikeBudenholzer', 'Bucks', 'Hawks', 'Arizona', 6-AUG-1969);
 INSERT INTO Coach VALUES
-	('JoeMazzulla', 'Celtics', 'FairmontStateHC', 'Massachusetts', 30-JUN-1988);
+	('JoeMazzulla', 'Celtics', 'FairmontState', 'RhodeIsland', 30-JUN-1988);
 INSERT INTO Coach VALUES
-	('DocRivers', '76ers', 'ClippersHC', 'Pennsylvania', 13-OCT-1961);
+	('DocRivers', '76ers', 'Clippers', 'Illinois', 13-OCT-1961);
