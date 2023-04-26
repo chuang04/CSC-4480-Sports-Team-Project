@@ -1,0 +1,30 @@
+INSERT INTO player VALUES
+    (45,'Cavaliers','J. B. Bickerstaff','Donovan','Mitchell',07-SEP-1996,73,1);
+INSERT INTO player VALUES
+    (10,'Cavaliers','J. B. Bickerstaff','Darius','Garland',26-JAN-2000,73,2);
+INSERT INTO player VALUES
+    (3,'Cavaliers','J. B. Bickerstaff','Caris','LeVert',25-AUG-1994,78,3);
+INSERT INTO player VALUES
+    (31,'Cavaliers','J. B. Bickerstaff','Evan','Allen',21-APR-1998,81,4);
+INSERT INTO player VALUES
+    (4,'Cavaliers','J. B. Bickerstaff','Evan','Mobley',18-JUN-2001,83,5);
+
+INSERT INTO StatsP VALUES
+    (1,1922,289,301,27,99,679,'48.4%',245,'38.6%');
+INSERT INTO StatsP VALUES
+    (2,1490,185,538,9,85,522,'46.2%',169,'41.0%');
+INSERT INTO StatsP VALUES
+    (3,897,282,287,25,72,103,'72.2%',127,'39.2%');
+INSERT INTO StatsP VALUES
+    (4,969,666,113,84,51,162,'73.3%',1,'10.0%');
+INSERT INTO StatsP VALUES
+    (5,1277,224,119,60,218,372,'66.9%',22,'21.6%');
+    
+INSERT INTO Team VALUES
+    ('Cavaliers','Ohio','J. B. Bickerstaff','Moondog',1970,13,4);
+
+INSERT INTO StatsT VALUES
+    (4,51,31,'62.2%', 'Eastern Conference',4);
+    
+INSERT INTO Coach VALUES
+    ('J. B. Bickerstaff','Cavaliers','Memphis Grizzlies','Ohio',10-MAR-1979);
