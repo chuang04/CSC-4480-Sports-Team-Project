@@ -6,7 +6,7 @@ INSERT INTO player VALUES
 INSERT INTO player VALUES
     (3,'Cavaliers','J. B. Bickerstaff','Caris','LeVert',25-AUG-1994,78,3);
 INSERT INTO player VALUES
-    (31,'Cavaliers','J. B. Bickerstaff','Evan','Allen',21-APR-1998,81,4);
+    (31,'Cavaliers','J. B. Bickerstaff','Jarrett','Allen',21-APR-1998,81,4);
 INSERT INTO player VALUES
     (4,'Cavaliers','J. B. Bickerstaff','Evan','Mobley',18-JUN-2001,83,5);
 
