@@ -54,7 +54,7 @@ INSERT INTO player VALUES
   (13, 'Heat', 'ErikSpoelstra', 'Bam', 'Adebayo', 18-JUL-1997, 84, 55);
   
  INSERT INTO StatsP VALUES
-   (51, 615, 225, 281, 21, 57, 196, '40.4%, 107, '34.5%')
+   (51, 615, 225, 281, 21, 57, 196, '40.4%', 107, '34.5%')
  INSERT INTO StatsP VALUES
    (52, 449, 128, 146, 12, 57, 160, '39.7%', 70, '33.0%')
  INSERT INTO StatsP VALUES
