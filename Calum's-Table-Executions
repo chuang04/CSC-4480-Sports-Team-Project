@@ -63,7 +63,7 @@ CREATE TRIGGER trigger_teamchange
 before update of team on player for each row 
 begin 
 insert into player.team_changed(pnumber, team, coach, fname, lname, dob, height, statsID, updated_at)
-select new.pnumber, new.team, new.coach, new.fname, new.lname, new.dob, new.height, new.statsID, GETDATE();
+values (new.pnumber, new.team, new.coach, new.fname, new.lname, new.dob, new.height, new.statsID, GETDATE());
 
 DROP TRIGGER trigger_teamchange;
 --Example of all the types of joins
