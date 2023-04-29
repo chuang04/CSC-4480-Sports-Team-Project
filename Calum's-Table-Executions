@@ -1,0 +1,80 @@
+--Calum Huang:
+
+--The first task that we tested was finding all the starters in Miami Heat.
+select * from player
+where team = 'Heat'
+order by pnumber asc;
+
+/*Second, we tried to find the number of people from all the teams we have added
+to see how many people are over 6 ft 6. We also found the average height of everyone
+in the teams.*/
+
+select count(*) as Tall_Players from player
+where  height > 78;
+
+select avg(height) as Average_Height from player;
+
+
+--Next we tried to find the player with that height with the highest field goal%.
+select pnumber, team, fname, lname, height, fgpercent
+from player p join Statsp s on p.statsID = s.SID
+where fgpercent = (select max(fgpercent) 
+                   from player p join statsp s on p.statsID = s.SID 
+                   where height > 78);
+
+--Next we will be finding the average height by team.
+select team, avg(height)
+from player
+group by team
+order by team asc;
+
+--With average height over 6 ft 6.5.
+select team, avg(height)
+from player
+group by team
+having avg(height) > 78.5
+order by team asc;
+
+--View to show all the teams & their rankings in order to people
+drop view team_rankings;
+
+CREATE VIEW team_rankings as
+select s.rank, tname
+from statst s join team t on s.SID = t.statsID
+order by rank asc;
+
+select rank, tname
+from team_rankings;
+
+--Creating a trigger when a player changes teams.
+CREATE TABLE team_changed(
+    pnumber number(3) not null,
+    team varchar2(15),
+    coach varchar2(30),
+    fname varchar2(15) not null,
+    lname varchar2(15) not null,
+    dob date,
+    height number(4),
+    statsID number(10),
+    updated_at Date not null
+);
+
+CREATE TRIGGER trigger_teamchange 
+before update of team on player for each row 
+begin 
+insert into player.team_changed(pnumber, team, coach, fname, lname, dob, height, statsID, updated_at)
+select new.pnumber, new.team, new.coach, new.fname, new.lname, new.dob, new.height, new.statsID, GETDATE();
+
+DROP TRIGGER trigger_teamchange;
+--Example of all the types of joins
+-- Natural & Inner
+select p.fname, p.lname, s.points
+from player p join statsp s on p.statsID = s.SID
+where points > 1000;
+-- Outer Join
+INSERT into Player (pnumber, fname, lname) values (5, 'Ty', 'Lawson');
+
+SELECT fname, lname, mascott as team_mascott
+from player p left outer join team t on team = tname;
+
+DELETE from player where fname = 'Ty' and pnumber = 5;
