@@ -10,14 +10,14 @@ drop table statst cascade constraints;
 
 CREATE TABLE PLAYER(
     pnumber number(3) not null,
-    team varchar2(15) not null,
-    coach varchar2(30) not null,
-    fname varchar2(15),
-    lname varchar2(15),
+    team varchar2(15),
+    coach varchar2(30),
+    fname varchar2(15) not null,
+    lname varchar2(15) not null,
     dob date,
     height number(4),
     statsID number(10),
-    constraint p_key primary key(pnumber, team)
+    constraint p_key primary key(pnumber, fname)
     --foreign key (team) references team(tname),
     --foreign key (statsID) references StatsP(SID)
 );
@@ -39,8 +39,8 @@ CREATE TABLE StatsP (
 CREATE TABLE Team (
     tname varchar2(15) not null,
     StateOrigin varchar2(15) not null,
-    coach varchar2(30) not null,
-    mascott varchar2(15),
+    coach varchar2(30),
+    mascott varchar2(30),
     yearcreated number(4),
     numPlayers  number(3),
     statsID number(10),
@@ -54,7 +54,7 @@ CREATE TABLE StatsT (
     wins number(5),
     losses number(5),
     winpercent varchar2(5),
-    conference varchar2(15),
+    conference varchar2(50),
     rank number(3),
     
     primary key (sid)
@@ -63,7 +63,7 @@ CREATE TABLE StatsT (
 CREATE TABLE Coach (
     fullname varchar2(30) not null,
     teamname varchar2(15),
-    pcoachingjob varchar2(15),
+    pcoachingjob varchar2(50),
     StateIn varchar2(15) not null,
     dob date,
     
