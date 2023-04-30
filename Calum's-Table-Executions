@@ -1,5 +1,7 @@
 --Calum Huang:
-
+--In case for rerunning the same code, so no errors show.
+drop table team_changed cascade constraints;
+DROP TRIGGER trigger_teamchange;
 --The first task that we tested was finding all the starters in Miami Heat.
 select * from player
 where team = 'Heat'
@@ -56,16 +58,17 @@ CREATE TABLE team_changed(
     dob date,
     height number(4),
     statsID number(10),
-    updated_at Date not null
+    updated_at date not null
 );
+
 
 CREATE TRIGGER trigger_teamchange 
 before update of team on player for each row 
 begin 
-insert into player.team_changed(pnumber, team, coach, fname, lname, dob, height, statsID, updated_at)
-values (new.pnumber, new.team, new.coach, new.fname, new.lname, new.dob, new.height, new.statsID, GETDATE());
+insert into team_changed(pnumber, team, coach, fname, lname, dob, height, statsID, updated_at)
+values (:new.pnumber, :new.team, :new.coach, :new.fname, :new.lname, :new.dob, :new.height, :new.statsID, current_date);
+end;
 
-DROP TRIGGER trigger_teamchange;
 --Example of all the types of joins
 -- Natural & Inner
 select p.fname, p.lname, s.points
