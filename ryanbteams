@@ -1,7 +1,7 @@
-//Player:
-//（pnumber,team,fname,lname,dob,height,statsID)
+--Player:
+--（pnumber,team,fname,lname,dob,height,statsID)
 
-//KNICKS Players
+--KNICKS Players
 INSERT INTO player VALUES
   (11, 'Knicks', 'TomThibodeau', 'Jalen', 'Brunson', 31-AUG-1996, 73, 46);
 INSERT INTO player VALUES
@@ -13,8 +13,8 @@ INSERT INTO player VALUES
 INSERT INTO player VALUES
   (23, 'Knicks', 'TomThibodeau', 'Mitchell', 'Robinson', 1-APR-1998, 84, 50);
   
-//StatsP:
- //(SID, points, rebounds, assists, blocks, steals, fgoals, fgpercent, threeptrs, threepercent)
+--StatsP:
+ --(SID, points, rebounds, assists, blocks, steals, fgoals, fgpercent, threeptrs, threepercent)
  
 INSERT INTO StatsP VALUES
   (46, 1633, 241, 421, 15, 61, 587, '49.1%', 134, '41.6%');
@@ -26,9 +26,22 @@ INSERT INTO StatsP VALUES
   (49, 1936, 767, 316, 21, 49, 658, '45.9%', 218, '34.3%');
 INSERT INTO StatsP VALUES
   (50, 435, 555, 53, 109, 56, 188, '67.1%', 0, NULL); 
+  
+--Team:
+--(tname,mascott,coach,stateorigin,yearcreated,numplayers,statsID)
 
+INSERT INTO Team VALUES
+  ('Knicks', 'NewYork', 'TomThibodeau', NULL, 1946, 17, 5); 
+  
+INSERT INTO StatsT VALUES
+    (5, 47, 35,'57.3%', 'Eastern Conference', 5);
+    
+INSERT INTO Coach VALUES
+    ('TomThibodeau','Knicks','Minnesota Timberwolves','Connecticut',17-JAN-1958);
 
-//HEAT Players
+----------------------------------------------------------------------------------------------------
+
+--HEAT Players
 INSERT INTO player VALUES
   (7, 'Heat', 'ErikSpoelstra', 'Kyle', 'Lowry', 25-MAR-1986, 72, 51);
 INSERT INTO player VALUES
@@ -41,7 +54,7 @@ INSERT INTO player VALUES
   (13, 'Heat', 'ErikSpoelstra', 'Bam', 'Adebayo', 18-JUL-1997, 84, 55);
   
  INSERT INTO StatsP VALUES
-   (51, 615, 225, 281, 21, 57, 196, '40.4%, 107, '34.5%')
+   (51, 615, 225, 281, 21, 57, 196, '40.4%', 107, '34.5%')
  INSERT INTO StatsP VALUES
    (52, 449, 128, 146, 12, 57, 160, '39.7%', 70, '33.0%')
  INSERT INTO StatsP VALUES
@@ -50,8 +63,19 @@ INSERT INTO player VALUES
    (54, 162, 119, 40, 5, 9, 54, '38.8%', 30, '29.7%')
  INSERT INTO StatsP VALUES
    (55, 1529, 688, 240, 61, 88, 602, '54.0%', 1, '8.3%')
-  
-//HAWKS Players
+
+INSERT INTO Team VALUES
+ ('Heat', 'Miami', 'ErikSpoelstra', 'Burnie', 1988, 17, 8); 
+ 
+INSERT INTO StatsT VALUES
+    (8, 44, 38,'53.7%', 'Eastern Conference', 8);
+    
+INSERT INTO Coach VALUES
+    ('ErikSpoelstra','Heat', NULL, 'Illinois', 1-NOV-1970);
+
+------------------------------------------------------------------------------------
+
+--HAWKS Players
 INSERT INTO player VALUES
   (11, 'Hawks', 'QuinSnyder', 'Trae', 'Young', 19-SEP-1998, 73, 56);
 INSERT INTO player VALUES
@@ -74,3 +98,13 @@ INSERT INTO StatsP VALUES
    (59, 931, 462, 85, 73, 85, 359, '50.8', 70, '29.2%');
  INSERT INTO StatsP VALUES
    (60, 779, 717, 58, 79, 58, 350, '65.3', 0, '0.0%');
+
+INSERT INTO Team VALUES
+  ('Hawks', 'Atlanta', 'QuinSnyder', 'Harry', 1946, 17, 7); 
+
+INSERT INTO StatsT VALUES
+    (7, 41, 41,'50.0%', 'Eastern Conference', 7);
+    
+INSERT INTO Coach VALUES
+    ('QuinSnyder','Hawks', 'Utah Jazz', 'Washington', 30-OCT-1966);
+  
