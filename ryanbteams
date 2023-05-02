@@ -1,0 +1,76 @@
+//Player:
+//（pnumber,team,fname,lname,dob,height,statsID)
+
+//KNICKS Players
+INSERT INTO player VALUES
+  (11, 'Knicks', 'TomThibodeau', 'Jalen', 'Brunson', 31-AUG-1996, 73, 46);
+INSERT INTO player VALUES
+  (9, 'Knicks', 'TomThibodeau', 'RJ', 'Barrett', 14-JUN-2000, 78, 47);
+INSERT INTO player VALUES
+  (3, 'Knicks', 'TomThibodeau', 'Josh', 'Hart', 6-MAR-1995, 77, 48);
+INSERT INTO player VALUES
+  (30, 'Knicks', 'TomThibodeau', 'Julius', 'Randle', 29-NOV-1994, 80, 49);
+INSERT INTO player VALUES
+  (23, 'Knicks', 'TomThibodeau', 'Mitchell', 'Robinson', 1-APR-1998, 84, 50);
+  
+//StatsP:
+ //(SID, points, rebounds, assists, blocks, steals, fgoals, fgpercent, threeptrs, threepercent)
+ 
+INSERT INTO StatsP VALUES
+  (46, 1633, 241, 421, 15, 61, 587, '49.1%', 134, '41.6%');
+INSERT INTO StatsP VALUES
+  (47, 1431, 368, 201, 15, 31, 510, '43.4%', 121, '31.0%'); 
+INSERT INTO StatsP VALUES
+  (48, 256, 176, 90, 12, 34, 92, '58.6%', 27, '51.9%');
+INSERT INTO StatsP VALUES
+  (49, 1936, 767, 316, 21, 49, 658, '45.9%', 218, '34.3%');
+INSERT INTO StatsP VALUES
+  (50, 435, 555, 53, 109, 56, 188, '67.1%', 0, NULL); 
+
+
+//HEAT Players
+INSERT INTO player VALUES
+  (7, 'Heat', 'ErikSpoelstra', 'Kyle', 'Lowry', 25-MAR-1986, 72, 51);
+INSERT INTO player VALUES
+  (4, 'Heat', 'ErikSpoelstra', 'Victor', 'Oladipo', 4-MAY-1992, 76, 52);
+INSERT INTO player VALUES
+  (22, 'Heat', 'ErikSpoelstra', 'Jimmy', 'Butler', 14-SEP-1989, 79, 53);
+INSERT INTO player VALUES
+  (42, 'Heat', 'ErikSpoelstra', 'Kevin', 'Love', 7-SEP-1988, 80, 54);
+INSERT INTO player VALUES
+  (13, 'Heat', 'ErikSpoelstra', 'Bam', 'Adebayo', 18-JUL-1997, 84, 55);
+  
+ INSERT INTO StatsP VALUES
+   (51, 615, 225, 281, 21, 57, 196, '40.4%, 107, '34.5%')
+ INSERT INTO StatsP VALUES
+   (52, 449, 128, 146, 12, 57, 160, '39.7%', 70, '33.0%')
+ INSERT INTO StatsP VALUES
+   (53, 1466, 375, 340, 21, 117, 479, '53.9%', 36, '35.0%')
+ INSERT INTO StatsP VALUES
+   (54, 162, 119, 40, 5, 9, 54, '38.8%', 30, '29.7%')
+ INSERT INTO StatsP VALUES
+   (55, 1529, 688, 240, 61, 88, 602, '54.0%', 1, '8.3%')
+  
+//HAWKS Players
+INSERT INTO player VALUES
+  (11, 'Hawks', 'QuinSnyder', 'Trae', 'Young', 19-SEP-1998, 73, 56);
+INSERT INTO player VALUES
+  (5, 'Hawks', 'QuinSnyder', 'Dejounte', 'Murray', 19-SEP-1996, 76, 57);
+INSERT INTO player VALUES
+  (41, 'Hawks', 'QuinSnyder', 'Saddiq', 'Bey', 9-APR-1999, 79, 58);
+INSERT INTO player VALUES
+  (20, 'Hawks', 'QuinSnyder', 'John', 'Collins', 23-SEP-1997, 81, 59);
+INSERT INTO player VALUES
+  (15, 'Hawks', 'QuinSnyder', 'Clint', 'Capela', 18-MAY-1994, 82, 60);
+  
+  
+INSERT INTO StatsP VALUES
+   (56, 1914, 217, 741, 9, 80, 597, '42.9%', 154, '33.5%');
+INSERT INTO StatsP VALUES
+   (57, 1515, 389, 448, 19, 112, 612, '46.4%', 133, '34.4%');
+ INSERT INTO StatsP VALUES
+   (58, 291, 120, 34, 1, 20, 108, '47.0%', 50, '40.0%');
+ INSERT INTO StatsP VALUES
+   (59, 931, 462, 85, 73, 85, 359, '50.8', 70, '29.2%');
+ INSERT INTO StatsP VALUES
+   (60, 779, 717, 58, 79, 58, 350, '65.3', 0, '0.0%');
