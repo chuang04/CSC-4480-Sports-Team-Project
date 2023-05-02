@@ -1,0 +1,316 @@
+INSERT INTO StatsP VALUES
+    (1,1922,289,301,27,99,679,'48.4%',245,'38.6%');
+INSERT INTO StatsP VALUES
+    (2,1490,185,538,9,85,522,'46.2%',169,'41.0%');
+INSERT INTO StatsP VALUES
+    (3,897,282,287,25,72,320,'43.1%',127,'39.2%');
+INSERT INTO StatsP VALUES
+    (4,969,666,113,84,51,403,'64.4%',1,'10.0%');
+INSERT INTO StatsP VALUES
+    (5,1277,224,119,60,218,525,'55.4%',22,'21.6%');
+INSERT INTO StatsP VALUES
+    (6,429,107,236,8,28,144,'40.4%',43,'28.9%');
+INSERT INTO StatsP VALUES
+    (7,706,121,72,16,26,239,'47.5%',68,'37.6%');
+INSERT INTO StatsP VALUES
+    (8,414,120,52,8,35,141,'46.8%',58,'37.2%');
+INSERT INTO StatsP VALUES
+    (9,186,128,41,16,17,67,'35.1%',37,'30.6%');
+INSERT INTO StatsP VALUES
+    (10,961,702,144,189,65,414,'70.5%',0,null);
+INSERT INTO StatsP VALUES
+    (46, 1633, 241, 421, 15, 61, 587, '49.1%', 134, '41.6%');
+INSERT INTO StatsP VALUES
+    (47, 1431, 368, 201, 15, 31, 510, '43.4%', 121, '31.0%'); 
+INSERT INTO StatsP VALUES
+    (48, 256, 176, 90, 12, 34, 92, '58.6%', 27, '51.9%');
+INSERT INTO StatsP VALUES
+    (49, 1936, 767, 316, 21, 49, 658, '45.9%', 218, '34.3%');
+INSERT INTO StatsP VALUES
+    (50, 435, 555, 53, 109, 56, 188, '67.1%', 0, NULL); 
+INSERT INTO StatsP VALUES
+    (51, 615, 225, 281, 21, 57, 196, '40.4%', 107, '34.5%');
+INSERT INTO StatsP VALUES
+    (52, 449, 128, 146, 12, 57, 160, '39.7%', 70, '33.0%');
+INSERT INTO StatsP VALUES
+    (53, 1466, 375, 340, 21, 117, 479, '53.9%', 36, '35.0%');
+INSERT INTO StatsP VALUES
+    (54, 162, 119, 40, 5, 9, 54, '38.8%', 30, '29.7%');
+INSERT INTO StatsP VALUES
+    (55, 1529, 688, 240, 61, 88, 602, '54.0%', 1, '8.3%');
+INSERT INTO StatsP VALUES
+    (56, 1914, 217, 741, 9, 80, 597, '42.9%', 154, '33.5%');
+INSERT INTO StatsP VALUES
+    (57, 1515, 389, 448, 19, 112, 612, '46.4%', 133, '34.4%');
+INSERT INTO StatsP VALUES
+    (58, 291, 120, 34, 1, 20, 108, '47.0%', 50, '40.0%');
+INSERT INTO StatsP VALUES
+    (59, 931, 462, 85, 73, 85, 359, '50.8', 70, '29.2%');
+INSERT INTO StatsP VALUES
+    (60, 779, 717, 58, 79, 58, 350, '65.3', 0, '0.0%');
+INSERT INTO StatsP VALUES
+    (61, 1290, 341, 495, 25, 79, 490, '47.9%', 158, '38.4%');
+INSERT INTO StatsP VALUES
+    (62, 750, 237, 163, 14, 62, 245, '44.0%', 146, '39.9%'); 
+INSERT INTO StatsP VALUES
+    (63, 497, 140, 163, 5, 23, 177, '43.6%', 51, '31.5%');
+INSERT INTO StatsP VALUES
+    (64, 1959, 742, 359, 51, 52, 707, '55.3%', 47, '27.5%');
+INSERT INTO StatsP VALUES
+    (65, 1239, 520, 99, 193, 37, 477, '53.1%', 136, '37.4%'); 
+INSERT INTO StatsP VALUES
+    (66, 703, 191, 382, 23, 93, 250, '41.5%', 115, '33.6%');
+INSERT INTO StatsP VALUES
+    (67, 1017, 293, 321, 76, 54, 350, '46.2%', 149, '38.1%');
+INSERT INTO StatsP VALUES
+    (68, 1784, 459, 232, 26, 75, 679, '49.1%', 163, '33.5%');
+INSERT INTO StatsP VALUES
+    (69, 2225, 649, 342, 51, 78, 727, '46.6%', 240, '35.0%');
+INSERT INTO StatsP VALUES
+    (70, 616, 390, 189, 61, 30, 228, '47.6%', 145, '44.6%');
+INSERT INTO StatsP VALUES
+    (71, 1216, 354, 618, 31, 71, 371, '44.1%', 161, '38.5%');
+INSERT INTO StatsP VALUES
+    (72, 1218, 176, 212, 8, 49, 439, '48.1%', 160, '43.4%');
+INSERT INTO StatsP VALUES
+    (73, 1085, 424, 186, 40, 68, 423, '50.1%', 126, '38.9%');
+INSERT INTO StatsP VALUES
+    (74, 266, 295, 60, 15, 39, 96, '42.7%', 55, '39.3%');
+INSERT INTO StatsP VALUES
+    (75, 2183, 670, 274, 112, 66, 728, '54.8', 66, '33.0%');
+    
+INSERT INTO Team VALUES
+    ('Cavaliers','Ohio',null,'Moondog',1970,13,null); -- 4, J. B. Bickerstaff
+INSERT INTO Coach VALUES
+    ('J. B. Bickerstaff',null,'Memphis Grizzlies','Denver','10-MAR-1979');-- Cavaliers
+
+UPDATE Coach set teamname = 'Cavaliers' where fullname = 'J. B. Bickerstaff';
+INSERT INTO StatsT VALUES
+    (4,51,31,'62.2%', 'Eastern Conference',4);
+UPDATE Team set coach = 'J. B. Bickerstaff', statsID = 4 where tname = 'Cavaliers';
+
+INSERT INTO player VALUES
+    (45,null,null,'Donovan','Mitchell','07-SEP-1996',73,null);--1,Cavalier, J. B. Bickerstaff
+INSERT INTO player VALUES
+    (10,null,null,'Darius','Garland','26-JAN-2000',73,null);--2, Cavalier, J. B. Bickerstaff
+INSERT INTO player VALUES
+    (3,null,null,'Caris','LeVert','25-AUG-1994',78,null);--3, Cavalier, J. B. Bickerstaff
+INSERT INTO player VALUES
+    (31,null,null,'Jarrett','Allen','21-APR-1998',81,null);--4, Cavalier, J. B. Bickerstaff
+INSERT INTO player VALUES
+    (4,null,null,'Evan','Mobley','18-JUN-2001',83,null);--5, Cavalier, J. B. Bickerstaff
+
+UPDATE Player set statsID = 1, team = 'Cavaliers', coach = 'J. B. Bickerstaff' where pnumber = 45 and fname = 'Donovan';
+UPDATE Player set statsID = 2, team = 'Cavaliers', coach = 'J. B. Bickerstaff' where pnumber = 10 and fname = 'Darius';
+UPDATE Player set statsID = 3, team = 'Cavaliers', coach = 'J. B. Bickerstaff' where pnumber = 3 and fname = 'Caris';
+UPDATE Player set statsID = 4, team = 'Cavaliers', coach = 'J. B. Bickerstaff' where pnumber = 31 and fname = 'Jarrett';
+UPDATE Player set statsID = 5, team = 'Cavaliers', coach = 'J. B. Bickerstaff' where pnumber = 4 and fname = 'Evan';
+
+INSERT INTO Team VALUES
+    ('Nets','New York', null, 'BrooklyKnight',1967, 14,null); --6,'Jacque Vaughn'
+INSERT INTO Coach VALUES
+    ('Jacque Vaughn',null,'Orlando Magic', 'Los Angeles', '11-FEB-1975');--'Nets'
+    
+UPDATE Coach set teamname = 'Nets' where fullname = 'Jacque Vaughn';
+
+INSERT INTO StatsT VALUES
+    (6,45,37,'54.9%','Eastern Conference',6);
+UPDATE Team set coach = 'Jacque Vaughn', statsID = 6 where tname = 'Nets';
+
+    
+INSERT INTO player VALUES
+    (26,null,null,'Spencer', 'Dinwiddie','06-APR-1993',78,null); -- 6, 'Jacque Vaughn', 'Nets'
+INSERT INTO player VALUES
+    (1,null,null,'Mikal', 'Bridges','30-AUG-1996',78,null); -- 7
+INSERT INTO player VALUES
+    (2,null,null,'Cameron', 'Johnson','03-MAR-1996',80,null); -- 8
+INSERT INTO player VALUES
+    (28,null,null,'Dorian', 'Finney-Smith','04-MAY-1993',79,null); --9
+INSERT INTO player VALUES
+    (33,null,null,'Nic', 'Claxton','17-APR-1999',83,null);--10
+    
+UPDATE Player set statsID = 6, team = 'Nets', coach = 'Jacque Vaughn' where pnumber = 26 and fname = 'Spencer';
+UPDATE Player set statsID = 7, team = 'Nets', coach = 'Jacque Vaughn' where pnumber = 1 and fname = 'Mikal';
+UPDATE Player set statsID = 8, team = 'Nets', coach = 'Jacque Vaughn' where pnumber = 2 and fname = 'Cameron';    
+UPDATE Player set statsID = 9, team = 'Nets', coach = 'Jacque Vaughn' where pnumber = 28 and fname = 'Dorian';
+UPDATE Player set statsID = 10, team = 'Nets', coach = 'Jacque Vaughn' where pnumber = 33 and fname = 'Nic';
+
+INSERT INTO Team VALUES
+	('Bucks', 'Wisconsin', null, 'Bango', 1968, 17, null); --'MikeBudenholzer', 1
+INSERT INTO Team VALUES
+	('Celtics', 'Massachusetts',null , 'Lucky', 1946, 17, null); --'JoeMazzulla',2
+INSERT INTO Team VALUES
+	('76ers', 'Pennsylvania',null, 'HipHop', 1946, 17, null);  --  'DocRivers', 3
+
+INSERT INTO Coach VALUES
+	('MikeBudenholzer', null, 'Hawks', 'Arizona', '06-AUG-1969'); --'Bucks'
+INSERT INTO Coach VALUES
+	('JoeMazzulla', null , 'FairmontState', 'RhodeIsland', '30-JUN-1988'); -- 'Celtics'
+INSERT INTO Coach VALUES
+	('DocRivers',null , 'Clippers', 'Illinois', '13-OCT-1961');-- '76ers'
+
+INSERT INTO StatsT VALUES
+	(1, 58, 24, '70.7%', 'Eastern', 1);
+INSERT INTO StatsT VALUES
+	(2, 57, 25, '69.5%', 'Eastern', 2);
+INSERT INTO StatsT VALUES
+	(3, 54, 28, '65.9%', 'Eastern', 3);
+
+
+UPDATE Team set coach = 'MikeBudenholzer' , statsID = 1 where tname = 'Bucks';
+UPDATE Team set coach = 'JoeMazzulla' , statsID = 2 where tname = 'Celtics';
+UPDATE Team set coach = 'DocRivers' , statsID = 3 where tname = '76ers';
+
+UPDATE Coach set teamname = 'Bucks' where fullname = 'MikeBudenholzer';
+UPDATE Coach set teamname = 'Celtics' where fullname = 'JoeMazzulla';
+UPDATE Coach set teamname = '76ers' where fullname = 'DocRivers';
+
+
+
+
+INSERT INTO player VALUES
+  (21, 'Bucks', 'MikeBudenholzer', 'Jrue', 'Holiday', '12-JUN-1990', 76, 61);--Bucks, MikeBudenholzer, 61
+INSERT INTO player VALUES
+  (12, 'Bucks', 'MikeBudenholzer', 'Grayson', 'Allen', '08-OCT-1995', 76, 62); --Bucks, MikeBudenholzer, 62
+INSERT INTO player VALUES
+  (22, 'Bucks', 'MikeBudenholzer', 'Khris', 'Middleton', '12-AUG-1991', 79, 63); --Bucks, MikeBudenholzer, 63
+INSERT INTO player VALUES
+  (34, 'Bucks', 'MikeBudenholzer', 'Giannis', 'Antetokounmpo', '06-DEC-1994', 83, 64); -- Bucks, MikeBudenholzer, 64
+INSERT INTO player VALUES
+  (11, 'Bucks', 'MikeBudenholzer', 'Brook', 'Lopez', '01-APR-1988', 84, 65); -- Bucks, MikeBudenholzer, 65
+  
+UPDATE Player set statsID = 61, team = 'Bucks', coach = 'MikeBudenholzer' where pnumber = 21 and fname = 'Jrue';
+UPDATE Player set statsID = 62, team = 'Bucks', coach = 'MikeBudenholzer' where pnumber = 12 and fname = 'Grayson';
+UPDATE Player set statsID = 63, team = 'Bucks', coach = 'MikeBudenholzer' where pnumber = 22 and fname = 'Khris';
+UPDATE Player set statsID = 64, team = 'Bucks', coach = 'MikeBudenholzer' where pnumber = 34 and fname = 'Giannis';
+UPDATE Player set statsID = 65, team = 'Bucks', coach = 'MikeBudenholzer' where pnumber = 11 and fname = 'Brook';
+
+
+INSERT INTO player VALUES
+  (36,null, null, 'Marcus', 'Smart', '06-MAR-1994', 76, null); -- 66, Celtics, JoeMazzulla
+INSERT INTO player VALUES
+  (9, null, null, 'Derrick', 'White', '02-JUL-1994', 76, null);-- 67, Celtics, JoeMazzulla
+INSERT INTO player VALUES
+  (7, null, null, 'Jaylen', 'Brown', '24-OCT-1996', 78, null);-- 68, Celtics, JoeMazzulla
+INSERT INTO player VALUES
+  (0, null, null, 'Jayson', 'Tatum', '03-MAR-1998', 80, null);-- 69, Celtics, JoeMazzulla
+INSERT INTO player VALUES
+  (42, null, null, 'Al', 'Horford', '03-JUN-1986', 81, null);-- 70, Celtics, JoeMazzulla
+  
+UPDATE Player set statsID = 66, team = 'Celtics', coach = 'JoeMazzulla' where pnumber = 36 and fname = 'Marcus';
+UPDATE Player set statsID = 67, team = 'Celtics', coach = 'JoeMazzulla' where pnumber = 9 and fname = 'Derrick';
+UPDATE Player set statsID = 68, team = 'Celtics', coach = 'JoeMazzulla' where pnumber = 7 and fname = 'Jaylen';
+UPDATE Player set statsID = 69, team = 'Celtics', coach = 'JoeMazzulla' where pnumber = 0 and fname = 'Jayson';
+UPDATE Player set statsID = 70, team = 'Celtics', coach = 'JoeMazzulla' where pnumber = 42 and fname = 'Al';
+
+  
+INSERT INTO player VALUES
+  (1, null, null, 'James', 'Harden', '26-AUG-1989', 77, null); --71,76ers,DocRivers
+INSERT INTO player VALUES
+  (0, null, null, 'Tyrese', 'Maxey', '04-NOV-2000', 75, null);--72,76ers,DocRivers
+INSERT INTO player VALUES
+  (12, null, null, 'Tobias', 'Harris', '15-JUL-1992', 79, null);--73,76ers,DocRivers
+INSERT INTO player VALUES
+  (17, null, null, 'PJ', 'Tucker', '05-MAY-1985', 77, null);--74,76ers,DocRivers
+INSERT INTO player VALUES
+  (21, null, null, 'Joel', 'Embiid', '16-MAR-1994', 84, null);--75,76ers,DocRivers
+
+
+UPDATE Player set statsID = 71, team = '76ers', coach = 'DocRivers' where pnumber = 1 and fname = 'James';
+UPDATE Player set statsID = 72, team = '76ers', coach = 'DocRivers' where pnumber = 0 and fname = 'Tyrese';
+UPDATE Player set statsID = 73, team = '76ers', coach = 'DocRivers' where pnumber = 12 and fname = 'Tobias';
+UPDATE Player set statsID = 74, team = '76ers', coach = 'DocRivers' where pnumber = 17 and fname = 'PJ';
+UPDATE Player set statsID = 75, team = '76ers', coach = 'DocRivers' where pnumber = 21 and fname = 'Joel';
+
+
+
+  
+INSERT INTO StatsT VALUES
+    (5, 47, 35,'57.3%', 'Eastern Conference', 5);
+INSERT INTO StatsT VALUES
+    (8, 44, 38,'53.7%', 'Eastern Conference', 8);
+INSERT INTO StatsT VALUES
+    (7, 41, 41,'50.0%', 'Eastern Conference', 7);
+    
+INSERT INTO Coach VALUES
+    ('TomThibodeau',null,'Minnesota Timberwolves','Connecticut','17-JAN-1958'); -- Knicks
+INSERT INTO Coach VALUES
+    ('ErikSpoelstra',null, NULL, 'Illinois', '01-NOV-1970'); -- Heat
+INSERT INTO Coach VALUES
+    ('QuinSnyder',null, 'Utah Jazz', 'Washington', '30-OCT-1966');--Hawks
+
+INSERT INTO Team VALUES
+    ('Knicks', 'NewYork', null, NULL, 1946, 17, null); -- TomThibodeau, 5
+INSERT INTO Team VALUES
+    ('Heat', 'Miami', null, 'Burnie', 1988, 17, null); -- ErikSpoelstra, 8
+INSERT INTO Team VALUES
+    ('Hawks', 'Atlanta', null, 'Harry', 1946, 17, null);  -- QuinSnyder, 7
+
+UPDATE Team set coach = 'TomThibodeau' , statsID = 5 where tname = 'Knicks';
+UPDATE Team set coach = 'ErikSpoelstra' , statsID = 8 where tname = 'Heat';
+UPDATE Team set coach = 'QuinSnyder' , statsID = 7 where tname = 'Hawks';
+
+UPDATE Coach set teamname = 'Knicks' where fullname = 'TomThibodeau';
+UPDATE Coach set teamname = 'Heat' where fullname = 'ErikSpoelstra';
+UPDATE Coach set teamname = 'Hawks' where fullname = 'QuinSnyder';
+
+    
+
+
+INSERT INTO player VALUES
+  (11, null, null, 'Jalen', 'Brunson', '31-AUG-1996', 73, null);--46
+INSERT INTO player VALUES
+  (9, null, null, 'RJ', 'Barrett', '14-JUN-2000', 78, null);--47
+INSERT INTO player VALUES
+  (3, null, null, 'Josh', 'Hart', '06-MAR-1995', 77, null);--48
+INSERT INTO player VALUES
+  (30, null, null, 'Julius', 'Randle', '29-NOV-1994', 80, null);--49
+INSERT INTO player VALUES
+  (23, null, null, 'Mitchell', 'Robinson', '01-APR-1998', 84, null);--50
+  
+UPDATE Player set statsID = 46, team = 'Knicks', coach = 'TomThibodeau' where pnumber = 11 and fname = 'Jalen';
+UPDATE Player set statsID = 47, team = 'Knicks', coach = 'TomThibodeau' where pnumber = 9 and fname = 'RJ';
+UPDATE Player set statsID = 48, team = 'Knicks', coach = 'TomThibodeau' where pnumber = 3 and fname = 'Josh';
+UPDATE Player set statsID = 49, team = 'Knicks', coach = 'TomThibodeau' where pnumber = 30 and fname = 'Julius';
+UPDATE Player set statsID = 50, team = 'Knicks', coach = 'TomThibodeau' where pnumber = 23 and fname = 'Mitchell';
+
+  
+INSERT INTO player VALUES
+  (7, null, null, 'Kyle', 'Lowry', '25-MAR-1986', 72, null); --51-55
+INSERT INTO player VALUES
+  (4, null, null, 'Victor', 'Oladipo', '04-MAY-1992', 76, null);
+INSERT INTO player VALUES
+  (22, null,null, 'Jimmy', 'Butler', '14-SEP-1989', 79, null);
+INSERT INTO player VALUES
+  (42, null,null, 'Kevin', 'Love', '07-SEP-1988', 80, null);
+INSERT INTO player VALUES
+  (13, null,null, 'Bam', 'Adebayo', '18-JUL-1997', 84, null);
+
+UPDATE Player set statsID = 51, team = 'Heat', coach = 'ErikSpoelstra' where pnumber = 7 and fname = 'Kyle';
+UPDATE Player set statsID = 52, team = 'Heat', coach = 'ErikSpoelstra' where pnumber = 4 and fname = 'Victor';
+UPDATE Player set statsID = 53, team = 'Heat', coach = 'ErikSpoelstra' where pnumber = 22 and fname = 'Jimmy';
+UPDATE Player set statsID = 54, team = 'Heat', coach = 'ErikSpoelstra' where pnumber = 42 and fname = 'Kevin';
+UPDATE Player set statsID = 55, team = 'Heat', coach = 'ErikSpoelstra' where pnumber = 13 and fname = 'Bam';
+
+ 
+INSERT INTO player VALUES
+  (11, null , null, 'Trae', 'Young', '19-SEP-1998', 73, null);--56-60
+INSERT INTO player VALUES
+  (5, null , null, 'Dejounte', 'Murray', '19-SEP-1996', 76, null);
+INSERT INTO player VALUES
+  (41,null , null, 'Saddiq', 'Bey', '09-APR-1999', 79, null);
+INSERT INTO player VALUES
+  (20, null , null, 'John', 'Collins', '23-SEP-1997', 81, null);
+INSERT INTO player VALUES
+  (15,null , null, 'Clint', 'Capela', '18-MAY-1994', 82, null);
+
+UPDATE Player set statsID = 56, team = 'Hawks', coach = 'QuinSnyder' where pnumber = 11 and fname = 'Trae';
+UPDATE Player set statsID = 57, team = 'Hawks', coach = 'QuinSnyder' where pnumber = 5 and fname = 'Dejounte';
+UPDATE Player set statsID = 58, team = 'Hawks', coach = 'QuinSnyder' where pnumber = 41 and fname = 'Saddiq';
+UPDATE Player set statsID = 59, team = 'Hawks', coach = 'QuinSnyder' where pnumber = 20 and fname = 'John';
+UPDATE Player set statsID = 60, team = 'Hawks', coach = 'QuinSnyder' where pnumber = 15 and fname = 'Clint';
+
+
+
+
+  
